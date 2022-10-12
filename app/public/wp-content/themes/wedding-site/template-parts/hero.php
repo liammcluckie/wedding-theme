@@ -1,14 +1,17 @@
 <header class="hero">
     <div class="hero--content">
 
-        <?php if ($date = get_field('hero_date')) : ?>
-            <span class="hero--date"><?php echo $date; ?></span>
+        <div class="hero--illustration"></div>
+
+        <?php if ($meta = get_field('hero_meta')) : ?>
+            <p class="hero--meta"><?php echo $meta; ?></p>
         <?php endif; ?>
 
-        <h1 class="hero--title">
-            <span>Rose &</span>
-            <span>Liam</span>
-        </h1>
+        <?php if ($title = get_field('hero_title')) : ?>
+            <h1 class="hero--title">
+                <?php echo $title; ?>
+            </h1>
+        <?php endif; ?>
 
     </div>
 
@@ -26,11 +29,12 @@
             <?php 
                 $src_data = wp_get_attachment_image_src($hero['id'], 'large', false); 
                 $srcset = wp_get_attachment_image_srcset($hero['id'], 'large');
+                $alt = get_post_meta($hero['id'], '_wp_attachment_image_alt', true);
             ?>
             <img 
                 src="<?php echo $src_data[0] ?>" 
                 srcset="<?php echo esc_attr( $srcset ); ?>"
-                alt="Man on one knee proposing on a cliff overlooking the ocean">
+                alt="<?php echo $alt ?>">
         </div>
     <?php endif; ?>
 
