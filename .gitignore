@@ -1,0 +1,3 @@
+app/public/wp-config.php
+logs/*
+.DS_Store

@@ -1,0 +1,215 @@
+/*
+    A responsive grid by jjgrainger
+    http://jjgrainger.co.uk/grid
+*/
+
+.container {
+    margin-block: 2.75rem;
+
+    @media (max-width: 800px) {
+        margin-block: 1.75rem;
+    }
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-inline: auto;
+    max-width: 1400px;
+    padding-inline: 2.75rem;
+}
+
+.column {
+    padding: rhythm(2);
+}
+
+/* whole */
+.column.one-whole {
+    width: 100%;
+}
+
+/* halves */
+.column.one-half {
+    width: 50%;
+}
+
+/* thirds */
+.column.one-third {
+    width: 33.333%;
+}
+
+.column.two-thirds {
+    width: 66.666%;
+}
+
+/* fourths */
+.column.one-fourth {
+    width: 25%;
+}
+
+.column.three-fourths {
+    width: 75%;
+}
+
+/* fifths */
+.column.one-fifth {
+    width: 20%;
+}
+
+.column.two-fifths {
+    width: 40%;
+}
+
+.column.three-fifths {
+    width: 60%;
+}
+
+.column.four-fifths,
+.four-fifths {
+    width: 80%;
+}
+
+/* sixths */
+.column.one-sixth {
+    width: 16.666666667%;
+}
+
+.column.five-sixths {
+    width: 83.333333335%;
+}
+
+/* twelfths */
+.column.one-twelfth {
+    width: 8.3333333%;
+}
+
+.column.five-twelfths {
+    width: 41.6666667%;
+}
+
+.column.seven-twelfths {
+    width: 58.3333333%;
+}
+
+.column.eleven-twelfths {
+    width: 91.666666667%;
+}
+
+/* push */
+.push-twelfth {
+    margin-left: 8.3333333%;
+}
+
+.push-sixth {
+    margin-left: 16.666666667%;
+}
+
+.push-third {
+    margin-left: 33.33333%;
+}
+
+.push-fourth {
+    margin-left: 25%;
+}
+
+.l-show {
+    display: none;
+}
+
+/* xxl */
+@media (max-width: 1024px) {
+    .column.xxl-one-half {
+        width: 50%;
+    }
+}
+
+/* xl */
+@media (max-width: 960px) {
+    .column.xl-one-whole {
+        width: 100%;
+        margin: 0;
+    }
+
+    .column.xl-one-half {
+        width: 50%;
+        margin: 0;
+    }
+
+    .column.xl-one-third {
+        width: 33.333%;
+        margin: 0;
+    }
+}
+
+/* l */
+@media (max-width: 800px) {
+    .row {
+        padding-inline: rhythm(2);
+    }
+
+    .column {
+        margin: 0;
+    }
+
+    .l-hide {
+        display: none !important;
+    }
+
+    .l-show {
+        display: block;
+    }
+
+    .column.l-one-whole,
+    .l-one-whole {
+        margin: 0;
+        width: 100%;
+    }
+
+    .column.l-one-half {
+        width: 50%;
+    }
+
+    .column.l-one-third {
+        width: 33.333%;
+    }
+
+    .column.l-two-thirds {
+        width: 66.666%;
+    }
+
+    .l-centered {
+        margin-inline: auto;
+    }
+}
+
+/* m */
+@media (max-width: 600px) {
+    .column.m-one-whole {
+        margin: 0;
+        width: 100%;
+    }
+
+    .column.m-one-half {
+        width: 50%;
+    }
+
+    .m-centered {
+        margin-inline: auto;
+    }
+}
+
+/* s */
+@media (max-width: 480px) {
+    .s-hide {
+        display: none;
+    }
+
+    .column.s-one-whole {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* xs */
+@media (max-width: 320px) {
+}
