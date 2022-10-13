@@ -32,10 +32,7 @@
                 $srcset = wp_get_attachment_image_srcset($hero['id'], 'large');
                 $alt = get_post_meta($hero['id'], '_wp_attachment_image_alt', true);
             ?>
-            <img 
-                src="<?php echo $src_data[0] ?>" 
-                srcset="<?php echo esc_attr( $srcset ); ?>"
-                alt="<?php echo $alt ?>">
+            <?php echo render_wp_image($hero['id'], 'large') ?>
         </div>
     <?php endif; ?>
 
