@@ -1,5 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Open+Sans:wght@300;400&display=swap");
+
 // Spacing
 $spacing: 2.75rem;
+$spacing--small: 1rem;
 
-$font--xl: 5.75rem;
-$font--sm: 1.25rem;
+// Font
+$title: "Calistoga", times;
+$body: "Open Sans", sans-serif;
+
+$font--xl: clamp(2.75rem, 1.861rem + 4.44vw, 5.75rem);
+$font--l: clamp(2.5rem, 1.907rem + 2.96vw, 4.5rem);
+$font--xm: clamp(1.75rem, 1.157rem + 2.96vw, 3.75rem);
+$font--m: clamp(1.5rem, 1.204rem + 1.48vw, 2.5rem);
+$font--sm: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+
+// Colours
+$bg: #fcdcb4;
+$primary: #9a6e44;
+$secondary: #ec744e;
+
+$white: #ffffff;
+
+// z-index
+$z-under: -1;
