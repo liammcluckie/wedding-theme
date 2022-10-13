@@ -3,15 +3,16 @@
 
         <div class="hero--illustration"></div>
 
-        <?php if ($meta = get_field('hero_meta')) : ?>
-            <p class="hero--meta"><?php echo $meta; ?></p>
-        <?php endif; ?>
-
-        <?php if ($title = get_field('hero_title')) : ?>
-            <h1 class="hero--title">
-                <?php echo $title; ?>
-            </h1>
-        <?php endif; ?>
+        <div class="hero--copy">
+            <?php if ($meta = get_field('hero_meta')) : ?>
+                <p class="hero--meta"><?php echo $meta; ?></p>
+            <?php endif; ?>
+            <?php if ($title = get_field('hero_title')) : ?>
+                <h1 class="hero--title">
+                    <?php echo $title; ?>
+                </h1>
+            <?php endif; ?>
+        </div>
 
     </div>
 
