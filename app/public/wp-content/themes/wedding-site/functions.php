@@ -15,6 +15,14 @@
     // Add menu support
     add_theme_support( 'menus' );
 
+    function wedding_register_nav_menu(){
+        register_nav_menus( array(
+            'main-menu' => __( 'Main Menu'),
+            'footer_menu'  => __( 'Footer Menu'),
+        ) );
+    }
+    add_action( 'after_setup_theme', 'wedding_register_nav_menu', 0 );
+
     /**
      * Function to output a Wordpress image with the necessary tags
      */

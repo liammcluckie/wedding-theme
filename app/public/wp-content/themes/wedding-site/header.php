@@ -12,4 +12,8 @@
 
 <body <?php body_class(); ?> />
 
+<header>
+    <?php include_once 'template-parts/main-menu.php'; ?>
+</header>
+
 <main>
