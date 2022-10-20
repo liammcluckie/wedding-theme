@@ -1,5 +1,5 @@
 <nav class="nav">
-    <div class="menu-toggle">
+    <button class="menu-toggle" role="button">
         <input type="checkbox" />
             <span></span>
             <span></span>
@@ -13,5 +13,5 @@
             ];
             wp_nav_menu($args);
         ?>
-    </div>
+    </button>
 </nav>
