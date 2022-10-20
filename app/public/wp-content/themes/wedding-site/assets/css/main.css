@@ -29,6 +29,10 @@ ol[role=list] {
   list-style: none;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -450,8 +454,39 @@ h1 {
   top: 25px;
   left: 95%;
   z-index: 1;
-  -webkit-user-select: none;
+  border: none;
+  background-color: transparent;
   user-select: none;
+}
+@media (max-width: 1080px) {
+  .menu-toggle {
+    left: 94%;
+  }
+}
+@media (max-width: 920px) {
+  .menu-toggle {
+    left: 93%;
+  }
+}
+@media (max-width: 800px) {
+  .menu-toggle {
+    left: 92%;
+  }
+}
+@media (max-width: 660px) {
+  .menu-toggle {
+    left: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .menu-toggle {
+    left: 88%;
+  }
+}
+@media (max-width: 420px) {
+  .menu-toggle {
+    left: 86%;
+  }
 }
 .menu-toggle input {
   display: flex;
@@ -497,9 +532,10 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: absolute;
-  width: 15%;
-  height: 70vh;
+  width: fit-content;
+  height: 60vh;
   color: #ffffff;
   margin-top: -52px;
   background-color: #9a6e44;
@@ -508,15 +544,37 @@ h1 {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
+@media (max-width: 800px) {
+  .menu-toggle ul {
+    height: 60vh;
+  }
+}
+@media (max-width: 550px) {
+  .menu-toggle ul {
+    height: 100vh;
+  }
+}
 .menu-toggle ul li {
   font-family: "Calistoga", times;
   font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
   letter-spacing: 1.25px;
-  padding: 10px 0;
+  padding: 0.5rem 3rem;
   transition-delay: 2s;
 }
+.menu-toggle ul li a {
+  border-bottom: 5px double rgba(255, 255, 255, 0);
+  transition: border-color 0.3s ease;
+}
+.menu-toggle ul li a:hover, .menu-toggle ul li a:focus {
+  border-color: rgb(255, 255, 255);
+}
 .menu-toggle input:checked ~ ul {
-  transform: translate(-50%, 0);
+  transform: translate(-60%, 0);
+}
+@media (max-width: 800px) {
+  .menu-toggle input:checked ~ ul {
+    transform: translate(-62%, 0);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
