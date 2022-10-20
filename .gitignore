@@ -3,3 +3,4 @@ logs/*
 .DS_Store
 app/public/wp-content/uploads/2022
 app/public/wp-content/uploads/backup
+backups/addon-image-optimizer/uploads/*
