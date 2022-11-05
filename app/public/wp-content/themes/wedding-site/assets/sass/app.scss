@@ -1,8 +1,9 @@
-@import "abstracts/_variables.scss";
-@import "abstracts/_utilities.scss";
+@import "abstracts/variables";
+@import "abstracts/utilities";
 
-@import "base/_base.scss";
-@import "base/_grid.scss";
+@import "base/base";
+@import "base/grid";
 
-@import "components/_hero.scss";
-@import "components/_main-menu.scss";
+@import "components/main-menu";
+@import "components/hero";
+@import "components/timeline";
