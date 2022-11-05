@@ -1,0 +1,86 @@
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.timeline--item {
+    position: relative;
+    display: flex;
+    flex: 33%;
+    gap: $spacing;
+
+    &:nth-of-type(3):after,
+    &:last-of-type::after {
+        content: "";
+    }
+
+    &:last-of-type::after {
+        content: "";
+    }
+
+    @media (max-width: 960px) {
+        gap: $spacing--small;
+    }
+
+    @media (max-width: 840px) {
+        flex: 50%;
+
+        &:nth-of-type(2):after,
+        &:nth-of-type(4):after {
+            content: "";
+        }
+
+        &:nth-of-type(3):after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18' /%3E%3C/svg%3E");
+        }
+    }
+
+    @media (max-width: 560px) {
+        flex-direction: column;
+        flex: 100%;
+
+        &:nth-of-type(2):after,
+        &:nth-of-type(4):after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18' /%3E%3C/svg%3E");
+        }
+    }
+
+    &::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18' /%3E%3C/svg%3E");
+        transform: rotate(90deg);
+        margin-top: auto;
+        height: 3rem;
+        width: 3rem;
+
+        @media (max-width: 840px) {
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            transform: translate(-50%) rotate(90deg);
+        }
+
+        @media (max-width: 560px) {
+            position: unset;
+            transform: rotate(180deg);
+            margin: 0 auto 0 auto;
+        }
+    }
+}
+
+.timings {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    time {
+        font-family: $title;
+    }
+}
+
+.timings--icon {
+    width: 5rem;
+    height: 5rem;
+}
