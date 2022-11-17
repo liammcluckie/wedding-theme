@@ -5,10 +5,12 @@
 ?>
 <?php get_header(); ?>
 
-<section class="container">
-    <div class="row">
-        <div class="column two-thirds">
-            <?php echo get_field('rsvp_form'); ?>
+<?php if ($rsvp = get_field('rsvp_form')) : ?>
+    <section class="container">
+        <div class="row">
+            <div class="column two-thirds push-sixth">
+                <?php echo $rsvp; ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
