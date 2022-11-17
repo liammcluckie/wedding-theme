@@ -91,8 +91,8 @@ li:not([class=""]) {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -265,7 +265,7 @@ h1 {
     display: block;
   }
   .column.l-one-whole,
-.l-one-whole {
+  .l-one-whole {
     margin: 0;
     width: 100%;
   }
@@ -492,7 +492,7 @@ h1 {
 }
 @media (max-width: 650px) {
   .hero--content .hero--meta,
-.hero--content .hero--title {
+  .hero--content .hero--title {
     padding-inline: 1rem;
   }
 }

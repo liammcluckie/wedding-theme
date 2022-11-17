@@ -7,8 +7,8 @@
 
 <section class="container">
     <div class="row">
-        <div class="column">
-            <?php echo the_content(get_the_id()); ?>
+        <div class="column two-thirds">
+            <?php echo get_field('rsvp_form'); ?>
         </div>
     </div>
 </section>

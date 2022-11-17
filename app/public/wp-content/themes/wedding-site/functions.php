@@ -41,3 +41,14 @@
             >
         ';
     }
+
+    function mailtrap($phpmailer) {
+        $phpmailer->isSMTP();
+        $phpmailer->Host = 'smtp.mailtrap.io';
+        $phpmailer->SMTPAuth = true;
+        $phpmailer->Port = 2525;
+        $phpmailer->Username = '22059d825aeb9e';
+        $phpmailer->Password = '9b8c22dd7246e5';
+      }
+      
+      add_action('phpmailer_init', 'mailtrap');
