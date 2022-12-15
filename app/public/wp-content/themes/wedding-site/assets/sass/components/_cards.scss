@@ -1,0 +1,52 @@
+.card--layout-title {
+    font-size: $font--m;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.card--content {
+    width: 90%;
+    padding: $spacing--small;
+    background-color: $secondary;
+    color: $white;
+    transform: translateY(-50px);
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.5s ease;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-80px);
+    }
+
+    * {
+        margin-bottom: $spacing--small;
+    }
+}
+
+.card--image {
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    img {
+        border-radius: 15px;
+    }
+}
+
+.card--button {
+    position: unset;
+    z-index: $z-100;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: $z-0;
+    }
+}

@@ -2,7 +2,13 @@
 .font-light {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-} /* Box sizing rules */
+}
+
+.center {
+  text-align: center;
+}
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -104,6 +110,7 @@ h2,
 h3,
 h4 {
   font-family: "Calistoga", times;
+  letter-spacing: 1.2px;
 }
 
 h1 {
@@ -611,6 +618,26 @@ input[type=submit]:hover, input[type=submit]:focus {
   }
 }
 
+.button {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #9a6e44;
+  outline: none;
+  border-radius: 15px;
+  color: #9a6e44;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  background-color: #9a6e44;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.button:active {
+  transform: translateY(2px);
+}
+
 .timeline {
   display: flex;
   flex-wrap: wrap;
@@ -691,6 +718,54 @@ input[type=submit]:hover, input[type=submit]:focus {
 .timings--icon {
   width: 5rem;
   height: 5rem;
+}
+
+.card--layout-title {
+  font-size: clamp(1.5rem, 1.204rem + 1.48vw, 2.5rem);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.card--content {
+  width: 90%;
+  padding: 1rem;
+  background-color: #ec744e;
+  color: #ffffff;
+  transform: translateY(-50px);
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: transform 0.5s ease;
+}
+.card--content:hover, .card--content:focus {
+  transform: translateY(-80px);
+}
+.card--content * {
+  margin-bottom: 1rem;
+}
+
+.card--image {
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card--image img {
+  border-radius: 15px;
+}
+
+.card--button {
+  position: unset;
+  z-index: 100;
+}
+.card--button:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
