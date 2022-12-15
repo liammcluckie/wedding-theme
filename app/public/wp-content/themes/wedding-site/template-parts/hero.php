@@ -27,11 +27,6 @@
 
     <?php if ($hero = get_field('hero_image')) : ?>
         <div class="hero--image">
-            <?php 
-                $src_data = wp_get_attachment_image_src($hero['id'], 'large', false); 
-                $srcset = wp_get_attachment_image_srcset($hero['id'], 'large');
-                $alt = get_post_meta($hero['id'], '_wp_attachment_image_alt', true);
-            ?>
             <?php echo render_wp_image($hero['id'], 'large') ?>
         </div>
     <?php endif; ?>
