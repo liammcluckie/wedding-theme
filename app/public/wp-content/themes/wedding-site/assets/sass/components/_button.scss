@@ -1,0 +1,22 @@
+.button {
+    position: relative;
+    display: inline-block;
+    border: 2px solid $primary;
+    outline: none;
+    border-radius: 15px;
+    color: $primary;
+    background-color: $white;
+    padding: 0.5rem $spacing--small;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+        border-color: $white;
+        color: $white;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
