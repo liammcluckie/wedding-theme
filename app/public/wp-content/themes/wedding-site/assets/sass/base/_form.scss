@@ -4,6 +4,10 @@
     width: 100%;
     margin-bottom: $spacing--small;
 
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
     .form-control {
         margin-bottom: 0;
     }
@@ -48,7 +52,18 @@ textarea {
 
 input[type="submit"] {
     width: fit-content;
+    background-color: $primary;
+    color: $white;
     padding: $spacing--small $spacing;
+    font-family: $title;
+    font-size: $font--sm;
+    text-align: center;
     cursor: pointer;
     margin-inline: auto;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary;
+    }
 }

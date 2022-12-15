@@ -91,8 +91,8 @@ li:not([class=""]) {
     scroll-behavior: auto;
   }
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -265,7 +265,7 @@ h1 {
     display: block;
   }
   .column.l-one-whole,
-  .l-one-whole {
+.l-one-whole {
     margin: 0;
     width: 100%;
   }
@@ -312,6 +312,11 @@ h1 {
   width: 100%;
   margin-bottom: 1rem;
 }
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
 .form-row .form-control {
   margin-bottom: 0;
 }
@@ -355,9 +360,18 @@ textarea {
 
 input[type=submit] {
   width: fit-content;
+  background-color: #9a6e44;
+  color: #ffffff;
   padding: 1rem 2.75rem;
+  font-family: "Calistoga", times;
+  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  text-align: center;
   cursor: pointer;
   margin-inline: auto;
+  transition: background-color 0.3s ease;
+}
+input[type=submit]:hover, input[type=submit]:focus {
+  background-color: #ec744e;
 }
 
 .nav {
@@ -512,7 +526,7 @@ input[type=submit] {
 }
 @media (max-width: 650px) {
   .hero--content .hero--meta,
-  .hero--content .hero--title {
+.hero--content .hero--title {
     padding-inline: 1rem;
   }
 }
