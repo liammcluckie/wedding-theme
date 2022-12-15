@@ -15,6 +15,9 @@
     // Add menu support
     add_theme_support( 'menus' );
 
+    // Custom image sizes
+    add_image_size('card', 800, 660, true);
+
     function wedding_register_nav_menu(){
         register_nav_menus( array(
             'main-menu' => __( 'Main Menu'),
