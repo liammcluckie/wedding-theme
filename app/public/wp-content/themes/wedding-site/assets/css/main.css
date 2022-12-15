@@ -306,6 +306,74 @@ h1 {
   }
 }
 /* xs */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+.form-row .form-control {
+  margin-bottom: 0;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.required > label {
+  position: relative;
+}
+
+label {
+  margin-bottom: 1rem;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 0.676rem + 0.37vw, 1rem);
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ec744e;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=submit] {
+  width: fit-content;
+  background-color: #9a6e44;
+  color: #ffffff;
+  padding: 1rem 2.75rem;
+  font-family: "Calistoga", times;
+  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  text-align: center;
+  cursor: pointer;
+  margin-inline: auto;
+  transition: background-color 0.3s ease;
+}
+input[type=submit]:hover, input[type=submit]:focus {
+  background-color: #ec744e;
+}
+
 .nav {
   height: 0;
 }
@@ -315,41 +383,12 @@ h1 {
   flex-direction: column;
   position: relative;
   top: 25px;
-  left: 95%;
+  margin-right: 1rem;
+  margin-left: auto;
   z-index: 1;
   border: none;
   background-color: transparent;
   user-select: none;
-}
-@media (max-width: 1080px) {
-  .menu-toggle {
-    left: 94%;
-  }
-}
-@media (max-width: 920px) {
-  .menu-toggle {
-    left: 93%;
-  }
-}
-@media (max-width: 800px) {
-  .menu-toggle {
-    left: 92%;
-  }
-}
-@media (max-width: 660px) {
-  .menu-toggle {
-    left: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .menu-toggle {
-    left: 88%;
-  }
-}
-@media (max-width: 420px) {
-  .menu-toggle {
-    left: 86%;
-  }
 }
 .menu-toggle input {
   display: flex;
@@ -432,12 +471,7 @@ h1 {
   border-color: rgb(255, 255, 255);
 }
 .menu-toggle input:checked ~ ul {
-  transform: translate(-60%, 0);
-}
-@media (max-width: 800px) {
-  .menu-toggle input:checked ~ ul {
-    transform: translate(-62%, 0);
-  }
+  transform: translate(-64%, 0);
 }
 
 .hero {

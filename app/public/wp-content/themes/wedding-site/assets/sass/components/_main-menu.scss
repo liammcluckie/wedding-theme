@@ -8,35 +8,12 @@
     flex-direction: column;
     position: relative;
     top: 25px;
-    left: 95%;
+    margin-right: $spacing--small;
+    margin-left: auto;
     z-index: 1;
     border: none;
     background-color: transparent;
     user-select: none;
-
-    @media (max-width: 1080px) {
-        left: 94%;
-    }
-
-    @media (max-width: 920px) {
-        left: 93%;
-    }
-
-    @media (max-width: 800px) {
-        left: 92%;
-    }
-
-    @media (max-width: 660px) {
-        left: 90%;
-    }
-
-    @media (max-width: 500px) {
-        left: 88%;
-    }
-
-    @media (max-width: 420px) {
-        left: 86%;
-    }
 
     input {
         display: flex;
@@ -132,10 +109,6 @@
     }
 
     input:checked ~ ul {
-        transform: translate(-60%, 0);
-
-        @media (max-width: 800px) {
-            transform: translate(-62%, 0);
-        }
+        transform: translate(-64%, 0);
     }
 }
