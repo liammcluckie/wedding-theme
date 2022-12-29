@@ -386,6 +386,14 @@ input[type=submit]:hover, input[type=submit]:focus {
   background-color: #ec744e;
 }
 
+footer {
+  background-color: #9a6e44;
+  color: #ffffff;
+}
+footer a {
+  border-bottom: 1px solid #ffffff;
+}
+
 .nav {
   height: 0;
 }
