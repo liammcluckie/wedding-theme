@@ -3,7 +3,7 @@
     display: inline-block;
     border: 2px solid $primary;
     outline: none;
-    border-radius: 15px;
+    border-radius: $radius;
     color: $primary;
     background-color: $white;
     padding: 0.5rem $spacing--small;
