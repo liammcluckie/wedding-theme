@@ -15,7 +15,7 @@
                     <p class="card--excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, itaque?</p>
                     <a 
                         href="#" 
-                        class="card--button button"
+                        class="card--button button button--alt"
                         target=""
                     >
                         Find out More
@@ -33,7 +33,7 @@
                 <p class="card--excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, itaque?</p>
                 <a 
                     href="#" 
-                    class="card--button button"
+                    class="card--button button button--alt"
                     target=""
                 >
                     Find out More
@@ -51,7 +51,7 @@
                 <p class="card--excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, itaque?</p>
                 <a 
                     href="#" 
-                    class="card--button button"
+                    class="card--button button button--alt"
                     target=""
                 >
                     Find out More

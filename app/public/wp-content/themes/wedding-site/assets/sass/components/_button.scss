@@ -1,22 +1,35 @@
 .button {
     position: relative;
     display: inline-block;
-    border: 2px solid $primary;
+    border: 2px solid $secondary;
     outline: none;
     border-radius: $radius;
-    color: $primary;
-    background-color: $white;
+    color: $white;
+    background-color: $secondary;
     padding: 0.5rem $spacing--small;
     cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
 
     &:hover,
     &:focus {
-        background-color: $primary;
-        border-color: $white;
-        color: $white;
+        padding-inline: 1.5rem;
     }
 
     &:active {
         transform: translateY(2px);
+    }
+}
+
+.button--alt {
+    border-color: $yellow;
+    background-color: $yellow;
+
+    &:hover,
+    &:focus {
+        padding-inline: $spacing--small;
+        background-color: $white;
+        border-color: $white;
+        color: $secondary;
     }
 }

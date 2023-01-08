@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Open+Sans:wght@300;400;600&display=swap");
 
 // Spacing
 $spacing: 2.75rem;
@@ -20,8 +20,10 @@ $intro: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
 $bg: #fcdcb4;
 $primary: #9a6e44;
 $secondary: #ec744e;
+$yellow: #e2b944;
 
 $white: #ffffff;
+$black: #000;
 $shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 // z-index

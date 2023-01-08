@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Open+Sans:wght@300;400;600&display=swap");
 .font-light {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -445,18 +445,12 @@ textarea {
 
 input[type=submit] {
   width: fit-content;
-  background-color: #9a6e44;
-  color: #ffffff;
-  padding: 1rem 2.75rem;
-  font-family: "Calistoga", times;
+  letter-spacing: 1.75px;
   font-size: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
-  text-align: center;
-  cursor: pointer;
-  margin-inline: auto;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem 2.75rem !important;
 }
 input[type=submit]:hover, input[type=submit]:focus {
-  background-color: #ec744e;
+  padding-inline: 3.25rem !important;
 }
 
 .wpcf7-spinner {
@@ -571,7 +565,7 @@ footer a {
 .menu-toggle input:checked ~ ul {
   opacity: 1;
   transform: translate(-64%, 0);
-  transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease, transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .hero {
@@ -711,24 +705,35 @@ footer a {
   }
 }
 
-.button {
+.button, input[type=submit] {
   position: relative;
   display: inline-block;
-  border: 2px solid #9a6e44;
+  border: 2px solid #ec744e;
   outline: none;
   border-radius: 15px;
-  color: #9a6e44;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #ec744e;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
-.button:hover, .button:focus {
-  background-color: #9a6e44;
-  border-color: #ffffff;
-  color: #ffffff;
+.button:hover, input[type=submit]:hover, .button:focus, input[type=submit]:focus {
+  padding-inline: 1.5rem;
 }
-.button:active {
+.button:active, input[type=submit]:active {
   transform: translateY(2px);
+}
+
+.button--alt {
+  border-color: #e2b944;
+  background-color: #e2b944;
+}
+.button--alt:hover, .button--alt:focus {
+  padding-inline: 1rem;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #ec744e;
 }
 
 .timeline {
