@@ -16,7 +16,7 @@
     flex-flow: row wrap;
     margin-inline: auto;
     max-width: 1400px;
-    padding-inline: 2.75rem;
+    padding-inline: $spacing;
 }
 
 .column {
@@ -144,7 +144,7 @@
 /* l */
 @media (max-width: 800px) {
     .row {
-        padding-inline: rhythm(2);
+        padding-inline: $spacing--small;
     }
 
     .column {
