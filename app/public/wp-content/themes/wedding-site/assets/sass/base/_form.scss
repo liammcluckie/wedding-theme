@@ -56,11 +56,27 @@ input[type="submit"] {
     letter-spacing: 1.75px;
     font-size: $intro;
     padding: 0.5rem $spacing !important;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
 
     &:hover,
     &:focus {
         padding-inline: 3.25rem !important;
     }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+input[type="submit"].hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wpcf7-response-output {
+    display: none;
 }
 
 // contact form 7 spinner

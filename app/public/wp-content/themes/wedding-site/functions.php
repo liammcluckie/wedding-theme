@@ -5,7 +5,7 @@
     function wpdocs_theme_name_scripts() {
         wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css',false,'1.1','all');
 
-        // wp_enqueue_script( 'app', get_template_directory_uri() . '/assets/js/app.js', false, 1.1, false);
+        wp_enqueue_script( 'app', get_template_directory_uri() . '/assets/js/app.js', false, '1.1', false);
     }
     add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 

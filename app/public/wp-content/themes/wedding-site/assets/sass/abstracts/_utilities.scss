@@ -12,12 +12,24 @@
     justify-content: center;
 }
 
+.pr {
+    position: relative;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
 .no-margin-top {
     margin-top: 0 !important;
 }
 
 .no-margin-bottom {
     margin-bottom: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
 }
 
 .column.extra-column-spacing-bottom {
