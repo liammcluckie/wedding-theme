@@ -10,11 +10,14 @@ window.onload = function() {
                     // if REALLY filed out
                     if (input.value !== "" || input.value.trim() !== "") {
                         const confetti = document.querySelector('.confetti-container');
+                        const success = document.querySelector('.success-container');
                         // hide submit button
                         btn.classList.add('hide');
                         // show confetti
                         setTimeout(() => {
                             confetti.classList.add('show');
+                            success.classList.add('show');
+                            success.scrollIntoView({ behavior: 'smooth' });
                         }, 500);
                     }
                 });
