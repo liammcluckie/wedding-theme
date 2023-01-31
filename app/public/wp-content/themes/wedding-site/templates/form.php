@@ -19,4 +19,16 @@
 
 <?php include_once get_template_directory() . '/template-parts/confetti.php'; ?>
 
+<section class="container success-container no-margin-top">
+    <div class="row flex-centered">
+        <div class="column one-half l-two-thirds m-one-whole center">
+            <p class="success"><strong>Thank you for confirming, we can't wait to have you at our wedding!</strong>
+            <br>
+            <br>
+            Please keep an eye on your inbox, if you don't receive a confirmation from us shortly please send us an email to the address at the bottom of the site.
+            </p>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
