@@ -8,7 +8,7 @@
 <?php include_once get_template_directory() . '/template-parts/page-header.php'; ?>
 
 <?php if ($rsvp = get_field('rsvp_form')) : ?>
-    <section class="container no-margin">
+    <section class="container no-margin-top">
         <div class="row">
             <div class="column two-thirds push-sixth l-one-whole">
                 <?php echo $rsvp; ?>
