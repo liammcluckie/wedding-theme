@@ -8,6 +8,14 @@
     visibility: hidden;
     transition: all 0.3s ease;
 
+    @media (min-width: 1800px) {
+        transform: translate(125px, -138px);
+    }
+
+    @media (min-width: 2300px) {
+        transform: translate(175px, -185px);
+    }
+
     @media (max-width: 1000px) {
         width: 30%;
         transform: translate(90px, -100px);

@@ -1016,6 +1016,16 @@ footer a {
   visibility: hidden;
   transition: all 0.3s ease;
 }
+@media (min-width: 1800px) {
+  .confetti-container {
+    transform: translate(125px, -138px);
+  }
+}
+@media (min-width: 2300px) {
+  .confetti-container {
+    transform: translate(175px, -185px);
+  }
+}
 @media (max-width: 1000px) {
   .confetti-container {
     width: 30%;
