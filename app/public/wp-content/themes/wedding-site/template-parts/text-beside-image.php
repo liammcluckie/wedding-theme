@@ -2,32 +2,38 @@
     <div class="row tbi-row">
         <div class="column one-whole">
             <div class="tbi-container">
-                <div class="tbi-image">
-                    <?php echo render_wp_image('56', 'large'); ?>
-                </div>
-                <div class="tbi-content">
-                    <div class="tbi-content--inner">
-                        <h3 class="tbi-title">Accommodation</h3>
-                        <p class="tbi-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget erat tristique, facilisis libero eu, fringilla neque.</p>
-                        <p class="tbi-body">Curabitur dignissim facilisis sapien, vel pulvinar purus accumsan id. Cras porttitor urna erat, eget tristique ligula maximus ut. Praesent vestibulum orci eget mauris dapibus, vehicula vestibulum velit elementum. Aenean luctus nunc at consequat sollicitudin.</p>
-                        <a href="" class="button">See more</a>
+
+                <?php if ($tbi_image) : ?>
+                    <div class="tbi-image">
+                        <?php echo render_wp_image($tbi_image['ID'], 'large'); ?>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row tbi-row">
-        <div class="column one-whole">
-            <div class="tbi-container">
-                <div class="tbi-image">
-                    <?php echo render_wp_image('56', 'large'); ?>
-                </div>
+                <?php endif; ?>
+
                 <div class="tbi-content">
                     <div class="tbi-content--inner">
-                        <h3 class="tbi-title">Food</h3>
-                        <p class="tbi-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget erat tristique, facilisis libero eu, fringilla neque.</p>
-                        <p class="tbi-body">Curabitur dignissim facilisis sapien, vel pulvinar purus accumsan id. Cras porttitor urna erat, eget tristique ligula maximus ut. Praesent vestibulum orci eget mauris dapibus, vehicula vestibulum velit elementum. Aenean luctus nunc at consequat sollicitudin.</p>
-                        <a href="" class="button">See more</a>
+
+                        <?php if ($tbi_title) : ?>
+                            <h3 class="tbi-title"><?php echo $tbi_title; ?></h3>
+                        <?php endif; ?>
+
+                        <?php if ($tbi_intro) : ?>
+                            <p class="tbi-intro"><?php echo $tbi_intro; ?></p>
+                        <?php endif; ?>
+
+                        <?php if ($tbi_content) : ?>
+                            <p class="tbi-body"><?php echo $tbi_content; ?></p>
+                        <?php endif; ?>
+
+                        <?php if ($tbi_button) : ?>
+                            <a 
+                                class="button"
+                                href="<?php echo $tbi_button['url'] ?>"
+                                target="<?php echo $tbi_button['target']; ?>"
+                            >
+                                <?php echo $tbi_button['title']; ?>
+                            </a>
+                        <?php endif; ?>
+
                     </div>
                 </div>
             </div>

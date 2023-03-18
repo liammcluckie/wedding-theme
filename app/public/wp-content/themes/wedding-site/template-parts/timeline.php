@@ -76,7 +76,7 @@
                         >
                     </div>
                     <h2>Party</h2>
-                    <time>18:00</time>
+                    <time>18:00 - Late</time>
                 </div>
             </li>
         </ul>

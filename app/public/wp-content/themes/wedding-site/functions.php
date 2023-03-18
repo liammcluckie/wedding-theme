@@ -34,6 +34,7 @@
         $src_data = wp_get_attachment_image_src($id, $size, false);
         $srcset = wp_get_attachment_image_srcset($id, $size);
         $alt = get_post_meta($id, '_wp_attachment_image_alt', true);
+        $caption = wp_get_attachment_caption($id);
 
         // Output image html
         return '
@@ -41,6 +42,7 @@
                 src="' . $src_data[0] . '" 
                 srcset="' . esc_attr( $srcset ) . '"
                 alt="'. $alt . '"
+                title="' . $caption . '"
             >
         ';
     }

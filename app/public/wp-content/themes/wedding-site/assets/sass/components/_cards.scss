@@ -11,6 +11,9 @@
 }
 
 .card--content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 90%;
     padding: $spacing--small;
     background-color: $secondary;
@@ -30,6 +33,10 @@
     }
 }
 
+.card--title {
+    font-size: $font--m;
+}
+
 .card--image {
     border-radius: $radius;
     box-shadow: $shadow;
@@ -41,6 +48,8 @@
 
 .card--button {
     position: unset;
+    align-self: flex-start;
+    margin-top: auto;
     z-index: $z-100;
 
     &:before {
