@@ -16,7 +16,7 @@
             >
                 <div class="card">
                     <div class="card--image">
-                        <?php echo render_wp_image($card_one['image']['ID'], 'card'); ?>
+                        <?php echo wedd_render_wp_image($card_one['image']['ID'], 'card'); ?>
                     </div>
                     <div class="card--content">
                         <h2 class="card--title"><?php echo $card_one['title']; ?></h2>
@@ -45,7 +45,7 @@
             >
                 <div class="card">
                     <div class="card--image">
-                        <?php echo render_wp_image($card_two['image']['ID'], 'card'); ?>
+                        <?php echo wedd_render_wp_image($card_two['image']['ID'], 'card'); ?>
                     </div>
                     <div class="card--content">
                         <h2 class="card--title"><?php echo $card_two['title']; ?></h2>
@@ -74,7 +74,7 @@
             >
                 <div class="card">
                     <div class="card--image">
-                        <?php echo render_wp_image($card_three['image']['ID'], 'card'); ?>
+                        <?php echo wedd_render_wp_image($card_three['image']['ID'], 'card'); ?>
                     </div>
                     <div class="card--content">
                         <h2 class="card--title"><?php echo $card_three['title']; ?></h2>

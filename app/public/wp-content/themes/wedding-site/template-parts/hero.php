@@ -27,7 +27,7 @@
 
     <?php if ($hero = get_field('hero_image')) : ?>
         <div class="hero--image">
-            <?php echo render_wp_image($hero['id'], 'large') ?>
+            <?php echo wedd_render_wp_image($hero['id'], 'large') ?>
         </div>
     <?php endif; ?>
 

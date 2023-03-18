@@ -29,7 +29,7 @@
     /**
      * Function to output a Wordpress image with the necessary tags
      */
-    function render_wp_image($id, $size) {
+    function wedd_render_wp_image($id, $size) {
         // Get all image data
         $src_data = wp_get_attachment_image_src($id, $size, false);
         $srcset = wp_get_attachment_image_srcset($id, $size);

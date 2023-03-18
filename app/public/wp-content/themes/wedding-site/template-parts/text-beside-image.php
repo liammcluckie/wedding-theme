@@ -5,7 +5,7 @@
 
                 <?php if ($tbi_image) : ?>
                     <div class="tbi-image">
-                        <?php echo render_wp_image($tbi_image['ID'], 'large'); ?>
+                        <?php echo wedd_render_wp_image($tbi_image['ID'], 'large'); ?>
                     </div>
                 <?php endif; ?>
 
