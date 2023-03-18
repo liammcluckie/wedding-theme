@@ -1,0 +1,18 @@
+.mapouter {
+    position: relative;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+}
+
+.location {
+    display: inline;
+    font-size: $intro;
+}
+
+.address {
+    display: inline;
+    font-size: $intro;
+}

@@ -21,6 +21,7 @@
 
 <?php 
     if ($image = get_field('image')) {
+        $image_desc = null;
         include get_template_directory() . '/template-parts/image.php';
     }
 ?>
@@ -43,6 +44,7 @@
         $tbi_intro = get_field('tbi_intro');
         $tbi_content = null;
         $tbi_button = get_field('tbi_link');
+        $tbi_alternate_row = '';
 
         include get_template_directory() . '/template-parts/text-beside-image.php';
     }
