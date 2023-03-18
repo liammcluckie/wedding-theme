@@ -46,4 +46,17 @@
     }
 ?>
 
+<?php 
+    if ($tbi_image = get_field('tbi_image')) {
+
+        $tbi_title = get_field('tbi_title');
+        $tbi_intro = get_field('tbi_intro');
+        $tbi_content = null;
+        $tbi_button = get_field('tbi_link');
+        $tbi_alternate_row = '';
+
+        include get_template_directory() . '/template-parts/text-beside-image.php';
+    }
+?>
+
 <?php get_footer(); ?>
