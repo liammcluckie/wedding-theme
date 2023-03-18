@@ -898,8 +898,13 @@ footer a {
   justify-content: center;
   align-items: center;
 }
+.timings h2 {
+  font-size: clamp(1.5rem, 1.204rem + 1.48vw, 2.5rem);
+  margin-bottom: 1rem;
+}
 .timings time {
   font-family: "Calistoga", times;
+  font-size: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
 }
 
 .timings--icon {
@@ -917,6 +922,14 @@ footer a {
   flex-direction: column;
   height: 100%;
   align-items: center;
+}
+.card:hover .card--content, .card:focus .card--content {
+  transform: translateY(-80px);
+}
+.card:hover .card--content .card--button, .card:focus .card--content .card--button {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #ec744e;
 }
 
 .card--content {
@@ -955,13 +968,6 @@ footer a {
   position: unset;
   align-self: flex-start;
   margin-top: auto;
-  z-index: 100;
-}
-.card--button:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
 }
 
 .tbi-container {
@@ -1027,6 +1033,7 @@ footer a {
   margin-bottom: 1rem;
 }
 .tbi-content--inner {
+  position: relative;
   padding: 1rem 2.75rem;
   background-color: #ffffff;
   border-top-right-radius: 15px;
