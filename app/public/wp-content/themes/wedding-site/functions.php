@@ -26,6 +26,9 @@
     }
     add_action( 'after_setup_theme', 'wedding_register_nav_menu', 0 );
 
+    // Use dynamic title tags
+    add_theme_support( 'title-tag' );
+
     /**
      * Function to output a Wordpress image with the necessary tags
      */
