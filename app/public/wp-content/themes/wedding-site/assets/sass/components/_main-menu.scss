@@ -112,7 +112,7 @@
 
     input:checked ~ ul {
         opacity: 1;
-        transform: translate(-60%, 0);
+        transform: translate(-56%, 0);
         transition: opacity 0.1s ease,
             transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
