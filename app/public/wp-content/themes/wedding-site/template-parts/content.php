@@ -12,7 +12,9 @@
         <div class="column one-half xl-two-thirds m-one-whole no-padding-top">
 
             <?php if ($content && $wysiwyg) : ?>
-                <?php echo $content ?>
+                <div class="wysiwyg">
+                    <?php echo $content ?>
+                </div>
             <?php elseif ($content && !$wysiwyg) : ?>
                 <p class="content"><?php echo $content; ?></p>
             <?php endif; ?>
