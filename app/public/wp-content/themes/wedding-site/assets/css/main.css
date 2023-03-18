@@ -372,19 +372,29 @@ h4 {
   background-size: cover;
   height: 15vh;
 }
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
   .header-illustration-top {
     height: 12vh;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .header-illustration-top {
-    height: 10vh;
+    height: 9vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .header-illustration-top {
     height: 8vh;
+  }
+}
+@media (max-width: 600px) {
+  .header-illustration-top {
+    height: 5vh;
+  }
+}
+@media (max-width: 340px) {
+  .header-illustration-top {
+    height: 3vh;
   }
 }
 
@@ -396,19 +406,29 @@ h4 {
   height: 15vh;
   transform: rotate(180deg);
 }
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
   .header-illustration-bottom {
     height: 12vh;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .header-illustration-bottom {
-    height: 10vh;
+    height: 9vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .header-illustration-bottom {
     height: 8vh;
+  }
+}
+@media (max-width: 600px) {
+  .header-illustration-bottom {
+    height: 5vh;
+  }
+}
+@media (max-width: 340px) {
+  .header-illustration-bottom {
+    height: 3vh;
   }
 }
 

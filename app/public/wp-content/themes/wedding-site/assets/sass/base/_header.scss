@@ -5,17 +5,29 @@
     background-size: cover;
     height: 15vh;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1350px) {
         height: 12vh;
     }
 
-    @media (max-width: 700px) {
-        height: 10vh;
+    @media (max-width: 1100px) {
+        height: 9vh;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
         height: 8vh;
     }
+
+    @media (max-width: 600px) {
+        height: 5vh;
+    }
+
+    @media (max-width: 340px) {
+        height: 3vh;
+    }
+
+    // @media (max-width: 500px) {
+    //     height: 8vh;
+    // }
 }
 
 .header-illustration-bottom {
@@ -26,17 +38,33 @@
     height: 15vh;
     transform: rotate(180deg);
 
-    @media (max-width: 900px) {
+    @media (max-width: 1350px) {
         height: 12vh;
     }
 
-    @media (max-width: 700px) {
-        height: 10vh;
+    @media (max-width: 1100px) {
+        height: 9vh;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
         height: 8vh;
     }
+
+    @media (max-width: 600px) {
+        height: 5vh;
+    }
+
+    @media (max-width: 340px) {
+        height: 3vh;
+    }
+
+    // @media (max-width: 700px) {
+    //     height: 10vh;
+    // }
+
+    // @media (max-width: 500px) {
+    //     height: 8vh;
+    // }
 }
 
 .page-title {
@@ -45,5 +73,5 @@
 }
 
 .page-intro {
-    font-size: $intro;
+    font-size: $font--sm;
 }
