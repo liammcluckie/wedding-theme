@@ -1380,4 +1380,8 @@ footer a {
   margin-bottom: 2.75rem;
 }
 
+.wysiwyg a {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=main.css.map */
