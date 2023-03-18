@@ -145,6 +145,14 @@ h4 {
   font-family: "Calistoga", times;
   letter-spacing: 1.2px;
 }
+@media (max-width: 480px) {
+  h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 1.15px;
+  }
+}
 
 h1 {
   font-size: clamp(2.75rem, 1.861rem + 4.44vw, 5.75rem);
@@ -162,7 +170,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  font-size: clamp(1.25rem, 0.852rem + 0.74vw, 1.5rem);
   line-height: 1.2;
 }
 
@@ -438,7 +446,7 @@ h4 {
 }
 
 .page-intro {
-  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  font-size: clamp(1.25rem, 0.852rem + 0.74vw, 1.5rem);
 }
 
 .form-row {
@@ -635,7 +643,7 @@ footer a {
 }
 .menu-toggle ul li {
   font-family: "Calistoga", times;
-  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  font-size: clamp(1.25rem, 0.852rem + 0.74vw, 1.5rem);
   letter-spacing: 1.25px;
   padding: 0.5rem 3rem;
   transition-delay: 2s;
@@ -649,7 +657,7 @@ footer a {
 }
 .menu-toggle input:checked ~ ul {
   opacity: 1;
-  transform: translate(-64%, 0);
+  transform: translate(-60%, 0);
   transition: opacity 0.1s ease, transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
@@ -721,7 +729,7 @@ footer a {
 }
 
 .hero--meta {
-  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  font-size: clamp(1.25rem, 0.852rem + 0.74vw, 1.5rem);
   letter-spacing: 1.5px;
 }
 
@@ -760,7 +768,7 @@ footer a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-20deg);
-  font-size: clamp(1rem, 0.852rem + 0.74vw, 1.5rem);
+  font-size: clamp(1.25rem, 0.852rem + 0.74vw, 1.5rem);
   letter-spacing: 1.5px;
   color: #ffffff;
   border: 3px solid #ffffff;
