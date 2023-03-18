@@ -1,5 +1,5 @@
 <section class="container">
-    <div class="row tbi-row">
+    <div class="row <?php echo $tbi_alternate_row; ?>">
         <div class="column one-whole">
             <div class="tbi-container">
 

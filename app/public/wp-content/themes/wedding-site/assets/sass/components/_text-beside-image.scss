@@ -7,7 +7,7 @@
     }
 }
 
-.tbi-row:nth-of-type(even) {
+.tbi-alternate-row {
     .tbi-container {
         flex-direction: row-reverse;
 

@@ -980,22 +980,22 @@ footer a {
   }
 }
 
-.tbi-row:nth-of-type(even) .tbi-container {
+.tbi-alternate-row .tbi-container {
   flex-direction: row-reverse;
 }
 @media (max-width: 800px) {
-  .tbi-row:nth-of-type(even) .tbi-container {
+  .tbi-alternate-row .tbi-container {
     flex-direction: column;
   }
 }
-.tbi-row:nth-of-type(even) .tbi-content--inner {
+.tbi-alternate-row .tbi-content--inner {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 @media (max-width: 800px) {
-  .tbi-row:nth-of-type(even) .tbi-content--inner {
+  .tbi-alternate-row .tbi-content--inner {
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0;
   }
@@ -1382,6 +1382,31 @@ footer a {
 
 .wysiwyg a {
   text-decoration: underline;
+}
+
+.mapouter {
+  position: relative;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+.location {
+  display: inline;
+  font-size: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
+}
+
+.address {
+  display: inline;
+  font-size: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
+}
+
+.image-desc {
+  margin-top: 1rem;
+  font-family: "Calistoga", times;
+  font-size: clamp(1rem, 0.963rem + 0.19vw, 1.125rem);
 }
 
 /*# sourceMappingURL=main.css.map */
