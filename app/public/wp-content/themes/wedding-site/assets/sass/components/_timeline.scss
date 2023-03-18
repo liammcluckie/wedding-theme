@@ -75,8 +75,14 @@
     justify-content: center;
     align-items: center;
 
+    h2 {
+        font-size: $font--m;
+        margin-bottom: $spacing--small;
+    }
+
     time {
         font-family: $title;
+        font-size: $intro;
     }
 }
 

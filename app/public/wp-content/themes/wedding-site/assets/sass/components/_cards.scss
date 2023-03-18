@@ -8,6 +8,19 @@
     flex-direction: column;
     height: 100%;
     align-items: center;
+
+    &:hover,
+    &:focus {
+        .card--content {
+            transform: translateY(-80px);
+
+            .card--button {
+                background-color: $white;
+                border-color: $white;
+                color: $secondary;
+            }
+        }
+    }
 }
 
 .card--content {
@@ -50,12 +63,4 @@
     position: unset;
     align-self: flex-start;
     margin-top: auto;
-    z-index: $z-100;
-
-    &:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: $z-0;
-    }
 }
