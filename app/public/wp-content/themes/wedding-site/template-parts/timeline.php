@@ -11,7 +11,7 @@
                         >
                     </div>
                     <h2>Arrival</h2>
-                    <time datetime="11.00">11.30</time>
+                    <time datetime="12.00">From Midday</time>
                 </div>
             </li>
             <li class="column timeline--item">
@@ -50,7 +50,7 @@
                         >
                     </div>
                     <h2>Food</h2>
-                    <time datetime="15.00">15:00</time>
+                    <time datetime="16.00">16:00</time>
                 </div>
             </li>
             <li class="column timeline--item">
@@ -63,7 +63,7 @@
                         >
                     </div>
                     <h2>Speeches</h2>
-                    <time datetime="16.00">16:00</time>
+                    <time datetime="18.00">18:00</time>
                 </div>
             </li>
             <li class="column timeline--item">
@@ -76,7 +76,7 @@
                         >
                     </div>
                     <h2>Party</h2>
-                    <time datetime="18.00">18:00 - Late</time>
+                    <time datetime="19.30">19:30 - Late</time>
                 </div>
             </li>
         </ul>
