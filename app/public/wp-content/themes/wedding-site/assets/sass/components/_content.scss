@@ -11,5 +11,11 @@
 .wysiwyg {
     a {
         text-decoration: underline;
+        transition: color 0.3s ease;
+
+        &:hover,
+        &:focus {
+            color: $secondary;
+        }
     }
 }
