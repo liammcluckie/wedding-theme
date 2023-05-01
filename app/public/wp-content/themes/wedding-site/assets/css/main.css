@@ -644,7 +644,7 @@ footer a {
   font-family: "Calistoga", times;
   font-size: clamp(1.25rem, 0.852rem + 0.74vw, 1.5rem);
   letter-spacing: 1.25px;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 6rem 0.5rem 3rem;
   transition-delay: 2s;
 }
 .menu-toggle ul li a {
