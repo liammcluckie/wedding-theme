@@ -1388,6 +1388,10 @@ footer a {
 
 .wysiwyg a {
   text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.wysiwyg a:hover, .wysiwyg a:focus {
+  color: #ec744e;
 }
 
 .mapouter {
