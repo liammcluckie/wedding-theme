@@ -46,6 +46,7 @@
                 srcset="' . esc_attr( $srcset ) . '"
                 alt="'. $alt . '"
                 title="' . $caption . '"
+                loading="lazy"
             >
         ';
     }
