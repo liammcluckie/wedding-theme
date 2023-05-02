@@ -1035,7 +1035,7 @@ footer a {
     padding-block: 0;
   }
 }
-.tbi-content * {
+.tbi-content *:not(br) {
   margin-bottom: 1rem;
 }
 .tbi-content--inner {
