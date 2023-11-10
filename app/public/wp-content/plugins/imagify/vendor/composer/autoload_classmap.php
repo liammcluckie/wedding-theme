@@ -46,7 +46,7 @@ return array(
     'Imagify_Regenerate_Thumbnails_Deprecated' => $baseDir . '/inc/deprecated/classes/class-imagify-regenerate-thumbnails-deprecated.php',
     'Imagify_Requirements' => $baseDir . '/inc/classes/class-imagify-requirements.php',
     'Imagify_Settings' => $baseDir . '/inc/classes/class-imagify-settings.php',
-    'Imagify_User' => $baseDir . '/inc/classes/class-imagify-user.php',
+    'Imagify_User' => $baseDir . '/inc/deprecated/classes/class-imagify-user.php',
     'Imagify_Views' => $baseDir . '/inc/classes/class-imagify-views.php',
     'Imagify_WP_Async_Request' => $baseDir . '/inc/classes/Dependencies/deliciousbrains/wp-background-processing/classes/wp-async-request.php',
     'Imagify_WP_Background_Process' => $baseDir . '/inc/classes/Dependencies/deliciousbrains/wp-background-processing/classes/wp-background-process.php',
